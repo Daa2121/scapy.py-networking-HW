@@ -73,8 +73,10 @@ def main() -> None:
             print("timed out")
             continue
 
-        rtt = int((end_time - start_time) * 100)  
-        rtt = (rtt // 10) * 100  #idk why im doing this extra stuff, using round() doesn't give me what the grader has and is only slight off from the correct value for whatever reason
+        rtt = int((end_time - start_time) * 100)
+        rtt = (
+            rtt // 10
+        ) * 100  # idk why im doing this extra stuff, using round() doesn't give me what the grader has and is only slight off from the correct value for whatever reason
         rtt_hist.append(rtt)
         total_time += rtt
 
